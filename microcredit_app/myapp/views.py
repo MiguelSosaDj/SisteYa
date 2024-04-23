@@ -55,7 +55,6 @@ def crear_microcredito(request):
         return JsonResponse({'error': 'Método no permitido.'}, status=405)
 
 def register_user(request):
-    import pdb; pdb.set_trace()
     if request.method == 'GET':
         username = request.GET.get('username')
         password = request.GET.get('password')
